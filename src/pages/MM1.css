@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main2 {
+  display: grid;
+  grid-template-columns: 45% 54%;
+  gap: 1%;
+  margin: 10PX;
+}
+
+#sect1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr repeat(3, 0.5fr);
+  grid-template-areas:
+    "inputs inputs"
+    "cardl cardw"
+    "cardlq cardwq"
+    "cardrho cardp0"
+  ;
+
+  gap: 15px;
+}
+
+#sect2 {
+  height: 100%;
+   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 370px; /* 🔥 altura fija para cada gráfica */
+  gap: 20px;
+}
+
+
+#inputs {
+  height: 100%;
+  grid-area: inputs;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 2px solid rgba(108, 204, 204, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+input {
+  width: 90%;
+  padding: 5px;
+  border: 2px solid rgba(0, 255, 255, 0.2);
+  background-color: #121212;
+  color: white;
+  border-radius: 10px;
+}
+
+label {
+  color: white;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+button {
+  width: 40%;
+  padding: 12px;
+  margin: 5PX;
+  background-color: #1043ba;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #1e293b;
+}
+
+#cardl {
+  grid-area: cardl;
+}
+
+#cardw {
+  grid-area: cardw;
+}
+
+#cardlq {
+  grid-area: cardlq;
+}
+
+#cardwq {
+  grid-area: cardwq;
+}
+
+#cardrho {
+  grid-area: cardrho;
+}
+
+#cardp0 {
+  grid-area: cardp0;
+}
+
+.grafica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   width: 100%;
+  height: 100% !important;
+  padding: 10px;
+  border: 2px solid rgba(108, 204, 204, 0.2);
+  border-radius: 10px;
+}

@@ -1,0 +1,13 @@
+.cu {
+  width:47vw;
+   padding: 5px;
+   border: 2px solid rgba(0, 255, 255, 0.2);
+   background-color: #121212;
+   color: white;
+   border-radius: 15px;
+   box-shadow: 2px 4px 9px rgba(109, 108, 108, 0.5);
+}
+
+.titulo{
+    text-align: center;
+}
