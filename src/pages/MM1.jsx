@@ -133,7 +133,7 @@ function MM1() {
                 <section id='sect2'>
 
                    
-                    <div className="grafica">
+                    <div className="grafica" id='grafica1'>
                         <h4>Ocupación del sistema (ρ)</h4>
                         <ResponsiveContainer width="100%" height="100%">
                             <LineChart data={data}>
@@ -146,7 +146,7 @@ function MM1() {
                     </div>
 
                    
-                    <div className="grafica">
+                    <div className="grafica" id='grafica2'>
                         <h4>Tiempo de espera (Wq)</h4>
                         <ResponsiveContainer width="100%" height="100%">
                             <LineChart data={data}>
@@ -159,7 +159,7 @@ function MM1() {
                     </div>
 
                    
-                    <div className="grafica">
+                    <div className="grafica" id='grafica3'>
                         <h4>Probabilidad de sistema vacío (P₀)</h4>
                         <ResponsiveContainer width="100%" height="100%">
                             <LineChart data={data}>
@@ -172,7 +172,7 @@ function MM1() {
                     </div>
 
                 
-                    <div className="grafica info-box">
+                    <div className="grafica info-box" id='analisis'>
                         <h4>Interpretación</h4>
                         <p><strong>ρ:</strong> qué tan ocupado está el sistema</p>
                         <p><strong>Wq:</strong> cuánto espera un cliente</p>
