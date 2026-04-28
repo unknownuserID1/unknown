@@ -7,7 +7,7 @@ function Card({ titulo, info, id}) {
       <div className="card-body">
         <h5 className="card-title titulo">{titulo}</h5>
           <hr />
-        <p className="card-text">{info}</p>
+        <div className="card-text">{info}</div>
       </div>
     </div>
   );
