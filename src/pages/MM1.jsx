@@ -135,7 +135,7 @@ function MM1() {
                    
                     <div className="grafica" id='grafica1'>
                         <h4>Ocupación del sistema (ρ)</h4>
-                        <ResponsiveContainer width="100%" height="100%">
+                        <ResponsiveContainer width="100%" height={300}>
                             <LineChart data={data}>
                                 <XAxis dataKey="lambda" />
                                 <YAxis domain={[0, 1]} />
@@ -148,7 +148,7 @@ function MM1() {
                    
                     <div className="grafica" id='grafica2'>
                         <h4>Tiempo de espera (Wq)</h4>
-                        <ResponsiveContainer width="100%" height="100%">
+                        <ResponsiveContainer width="100%" height={300}>
                             <LineChart data={data}>
                                 <XAxis dataKey="lambda" />
                                 <YAxis />
@@ -161,7 +161,7 @@ function MM1() {
                    
                     <div className="grafica" id='grafica3'>
                         <h4>Probabilidad de sistema vacío (P₀)</h4>
-                        <ResponsiveContainer width="100%" height="100%">
+                        <ResponsiveContainer width="100%" height={300}>
                             <LineChart data={data}>
                                 <XAxis dataKey="lambda" />
                                 <YAxis domain={[0, 1]} />

@@ -27,6 +27,7 @@
 
 #sect2 {
   height: 100%;
+  width: 100%;
    display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 370px;
@@ -164,4 +165,10 @@ button:hover {
   display: flex;
   align-items: flex-start;
 }
+
+/* git add .
+git commit -m "mejoras UI"
+git push
+npm run build
+npm run deploy */
 }
