@@ -137,31 +137,14 @@ button:hover {
 }
 
 #sect2 {
-  grid-template-columns: 100%;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: 
-    "grafica1"
-    "grafica2"
-    "grafica3"
-    "analisis"
-   ;
-
+  display: grid;
+  grid-template-columns: 1fr; /* 👈 UNA SOLA COLUMNA */
+  grid-auto-rows: 300px;      /* 👈 4 filas automáticas */
+  gap: 20px;
 }
 
-#grafica1{
-  grid-area: grafica1;
-}
-
-#grafica2{
-  grid-area: grafica2;
-}
-
-#grafica3{
-  grid-area: grafica3;
-}
 
 #analisis{
-  grid-area: analisis;
   display: flex;
   align-items: flex-start;
 }
