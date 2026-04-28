@@ -138,14 +138,9 @@ button:hover {
   }
 
   #sect2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    /* 👈 UNA SOLA COLUMNA */
-    grid-auto-rows: 300px;
-    /* 👈 4 filas automáticas */
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
   }
-
 
   #analisis {
     display: flex;
