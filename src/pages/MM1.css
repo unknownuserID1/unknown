@@ -137,9 +137,11 @@ button:hover {
   }
 
   #sect2 {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
+   display: flex;
+    flex-direction: column;
+    min-width: 0;
+    grid-auto-rows: unset;  /* ← clave */
+    gap: 10px;
   }
 
   #analisis {
