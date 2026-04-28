@@ -137,10 +137,11 @@ button:hover {
   }
 
   #sect2 {
-   display: flex;
+    display: flex;
+    padding-bottom: 15px;
     flex-direction: column;
     min-width: 0;
-    grid-auto-rows: unset;  /* ← clave */
+    grid-auto-rows: unset;
     gap: 10px;
   }
 
@@ -149,7 +150,8 @@ button:hover {
     align-items: flex-start;
   }
 
-  /* git add .
+  /*
+   git add .
 git commit -m "mejoras UI"
 git push
 npm run build
