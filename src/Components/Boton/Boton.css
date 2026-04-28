@@ -14,3 +14,9 @@
 .btn-custom:hover {
   background-color: #1e293b;
 }
+
+@media(max-width:480px){
+  .btn-custom{
+    width: 40vw;
+  }
+}

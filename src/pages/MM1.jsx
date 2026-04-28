@@ -132,7 +132,7 @@ function MM1() {
 
                 <section id='sect2'>
 
-                    {/* 🟢 OCUPACIÓN */}
+                   
                     <div className="grafica">
                         <h4>Ocupación del sistema (ρ)</h4>
                         <ResponsiveContainer width="100%" height="100%">
@@ -145,7 +145,7 @@ function MM1() {
                         </ResponsiveContainer>
                     </div>
 
-                    {/* 🟡 TIEMPO DE ESPERA */}
+                   
                     <div className="grafica">
                         <h4>Tiempo de espera (Wq)</h4>
                         <ResponsiveContainer width="100%" height="100%">
@@ -158,7 +158,7 @@ function MM1() {
                         </ResponsiveContainer>
                     </div>
 
-                    {/* 🔵 SISTEMA VACÍO */}
+                   
                     <div className="grafica">
                         <h4>Probabilidad de sistema vacío (P₀)</h4>
                         <ResponsiveContainer width="100%" height="100%">
@@ -171,7 +171,7 @@ function MM1() {
                         </ResponsiveContainer>
                     </div>
 
-                    {/* 🧠 EXPLICACIÓN VISUAL */}
+                
                     <div className="grafica info-box">
                         <h4>Interpretación</h4>
                         <p><strong>ρ:</strong> qué tan ocupado está el sistema</p>

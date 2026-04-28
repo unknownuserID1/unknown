@@ -15,7 +15,7 @@ function App() {
       </header>
 
       <main id='main1'>
-        <Card
+        <Card 
           id="que"
           titulo="QUE ES TEORIA DE COLAS"
           info="La teoría de colas es un área de la investigación de operaciones que analiza los sistemas 

@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
 .cu {
   width:47vw;
    padding: 5px;
@@ -10,4 +15,12 @@
 
 .titulo{
     text-align: center;
+}
+
+@media(max-width:480px){
+   .cu{
+    height: 100%;
+    gap: 10px;
+   }
+  
 }

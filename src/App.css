@@ -36,7 +36,7 @@ header{
 
 #que{
   grid-area: que;
-  width: 96vw;
+  width: auto;
   justify-self: center;
 }
 
@@ -56,5 +56,22 @@ aside{
   justify-content:center ;
   margin-top: 5px;
   margin-bottom: 15px;
+  
+}
+
+@media(max-width:480px){
+  #main1{
+    width: 100%;
+    grid-template-columns:1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "que" 
+    "mm1"
+    "mm2"
+    "fmm1"
+    "fmm2"
+    ;
+  }
+
   
 }
