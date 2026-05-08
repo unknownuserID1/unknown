@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Boton/Boton.css';
+import './Boton.css';
 
 function Boton({ texto, onClick }) {
   return (
