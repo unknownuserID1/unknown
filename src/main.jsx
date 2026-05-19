@@ -7,6 +7,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
 import App from './App.jsx'
 import MM1 from './pages/MM1.jsx'
+import MMK from './pages/MMK/MMK.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/mm1" element={<MM1 />} />
+        <Route path="/mmk" element={<MMK />} />
       </Routes>
     </HashRouter>
   </StrictMode>

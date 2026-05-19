@@ -15,7 +15,7 @@ function App() {
       </header>
 
       <main id='main1'>
-        <Card 
+        <Card
           id="que"
           titulo="QUE ES TEORIA DE COLAS"
           info="La teoría de colas es un área de la investigación de operaciones que analiza los sistemas 
@@ -66,17 +66,54 @@ function App() {
             </>
           }
         />
+<Card
+  id="fmmk"
+  titulo="FORMULAS DEL MODELO M/M/K"
+  info={
+    <>
+      <p>
+        Para este modelo el usuario debe indicar los valores de λ, μ y K, donde
+        K representa la cantidad de estaciones de servicio o servidores. Para
+        que el sistema sea estable debe cumplirse que λ sea menor que Kμ.
+      </p>
+      <ul>
+        
 
-        <Card
-          id="fmmk"
-          titulo="FORMULAS DEL MODELO M/M/K"
-          info=" "
-        />
+        <li>Factor de ocupación</li>
+        ρ = λ / (Kμ)
+
+        <li>Probabilidad de que el sistema esté vacío</li>
+        P₀ = 1 / [
+        Σ(n=0 hasta K-1) ((λ/μ)^n / n!) +
+        ((λ/μ)^K / (K!(1-ρ)))
+        ]
+
+        <li>Promedio de personas en la cola</li>
+        Lq = (P₀ (λ/μ)^K ρ) / (K!(1-ρ)^2)
+
+        <li>Promedio de personas en el sistema</li>
+        L = Lq + (λ/μ)
+
+        <li>Tiempo promedio de espera en la cola</li>
+        Wq = Lq / λ
+
+        <li>Duración promedio en el sistema</li>
+        W = Wq + (1/μ)
+      </ul>
+    </>
+  }
+/>
+      
+       
       </main>
 
       <aside>
         <Link to="/mm1">
-         <Boton texto="Calcular M/M/1"/>
+          <Boton texto="Calcular M/M/1" />
+        </Link>
+
+        <Link to="/mmk">
+          <Boton texto="Calcular M/M/K" />
         </Link>
       </aside>
 
